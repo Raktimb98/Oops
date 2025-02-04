@@ -1,7 +1,7 @@
 <?php
 trait Hello{
     public function hello(){
-        echo "Hello from tarit";
+        echo "Hello from Trait";
     }
 }
 class A{
@@ -11,7 +11,10 @@ class A{
 }
 class B extends A{
     use Hello;
+    public function hello(){
+        echo "Hello from B";
+    }
 }
-$obj = new B();
+$obj = new B(); // Priority is given to the B class method (Basically Priority matters)
 $obj->hello();
 ?>
