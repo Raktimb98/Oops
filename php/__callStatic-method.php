@@ -1,7 +1,7 @@
 <?php
 class abc{
-    private static function sayHello(){
-        echo "Hello";
+    private static function sayHello($name){
+        echo "Hello $name";
     }
     public static function __callStatic($method, $args){
         if(method_exists(__CLASS__, $method)){
@@ -11,5 +11,5 @@ class abc{
         }
 }
 }
-abc::sayHello();
+abc::sayHello("Frost Fern");
 ?>
