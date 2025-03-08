@@ -1,0 +1,11 @@
+get_class
+get_parent_class
+get_class_methods
+get_class_vars
+get_object_vars
+get_called_class
+get_declared_classes
+get_declared_classes
+get_declared_interfaces
+get_declared_traits
+class_alias
